@@ -59,7 +59,7 @@ where Comparator.Compared == Element {
 		return .unmatched(lowerBound)
 	}
 
-	func index(of element: Element) -> Int? {
+	public func index(of element: Element) -> Int? {
 		switch self.lookup(element) {
 		case .matched(let index):
 			return index
@@ -68,7 +68,7 @@ where Comparator.Compared == Element {
 		}
 	}
 
-	func firstIndex(of element: Element) -> Int? {
+	public func firstIndex(of element: Element) -> Int? {
 		index(of: element)
 	}
 }
